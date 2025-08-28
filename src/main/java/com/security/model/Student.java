@@ -1,6 +1,13 @@
 package com.security.model;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name = "students")
 public class Student {
+    @Id
     private int id;
     private String name;
     private int marks;
@@ -10,6 +17,9 @@ public class Student {
         this.id = id;
         this.name = name;
         this.marks = marks;
+    }
+
+    public Student() {
     }
 
     public int getId() {

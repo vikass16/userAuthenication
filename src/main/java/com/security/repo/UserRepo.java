@@ -11,3 +11,6 @@ public interface UserRepo extends JpaRepository<Users, Integer> {
 
     Users findByUsername(String username);
 }
+
+
+//  Plain text -> hash1 -> hash2

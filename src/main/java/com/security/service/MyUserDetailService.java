@@ -28,3 +28,6 @@ public class MyUserDetailService implements UserDetailsService {
         return new UserPrincipal(user);
     }
 }
+
+
+// in this file UserDetails finds user by username in database if user is null then returns "not found" else return user
